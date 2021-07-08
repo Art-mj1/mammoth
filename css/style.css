@@ -26,6 +26,26 @@ section {
  position: relative;
 }
 
+/* Full Page Navigation Style code */
+#fp-nav {
+ top: 25%;
+ right: 20% !important;
+ background: rgba(175, 175, 175, 0.4);
+ border-radius: 15px;
+ padding: 10px 0;
+}
+
+#fp-nav ul li a span {
+ background: #fff;
+ width: 6px !important;
+ height: 6px !important;
+ margin: -3px 0 0 -3px !important
+}
+
+#fp-nav ul li a.active span {
+ background: #d72329 !important
+}
+
 /* PC Frame Header Style Code */
 .header {
  position: fixed;
@@ -349,7 +369,7 @@ header .hidden_sub .subnav_box ul a:hover {
 }
 
 .page_1 .main_msg img {
- animation: logo 0.5s 1;
+ animation: logo 0.8s 1;
 }
 
 .page_1 .main_msg .main_txt {
@@ -368,13 +388,16 @@ header .hidden_sub .subnav_box ul a:hover {
  color: #fff;
 }
 
-.page_1 .main_msg .btn_box {
+
+/* Common Buttons Style Code */
+.btn_box {
  width: 100%;
  height: auto;
  display: flex;
+ justify-content: center;
 }
 
-.page_1 .main_msg .btn_box a {
+.btn_box a {
  width: 195px;
  padding: 20px 0;
  border: 1px solid #fff;
@@ -386,7 +409,7 @@ header .hidden_sub .subnav_box ul a:hover {
  z-index: 10;
 }
 
-.page_1 .main_msg .btn_box a:after {
+.btn_box a:after {
  content: '';
  position: absolute;
  width: 150%;
@@ -399,10 +422,97 @@ header .hidden_sub .subnav_box ul a:hover {
  transition: all 0.4s;
 }
 
-.page_1 .main_msg .btn_box a:hover:after {
+.btn_box a:hover:after {
  left: -50px;
 }
 
-.page_1 .main_msg .btn_box a:hover {
+.btn_box a:hover {
  color: #d72329;
+}
+
+/* Page 2 style */
+.page_2 {
+ background: url(../img/page_bg02.jpg)no-repeat center center;
+ background-size: cover;
+ position: relative;
+}
+
+.page_2 .center {
+ display: flex;
+}
+
+.page_2 .phone_img {
+ width: 25%;
+}
+
+.page_2 .phone_img img {
+ width: 100%;
+}
+
+.page_2 .page_txt_box {
+ width: 75%;
+ padding: 0 0 0 50px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.page_2 .page_txt_box .main-txt {
+ padding: 30px 0;
+ width: 0;
+ overflow: hidden;
+ white-space: nowrap;
+}
+
+.page_2 .page_txt_box .main-txt.txt {
+ animation: txt 0.8s 1;
+ animation-fill-mode: forwards;
+ animation-delay: 0.8s;
+}
+
+.page_2 .page_txt_box h2 {
+ font-size: 43px;
+ color: #fff;
+}
+
+.page_2 .page_txt_box .page_logo {
+ background: url(../img/page02_logo.png)no-repeat center center;
+ background-size: cover;
+ width: 590px;
+ height: 40px;
+ transform: translateY(70px);
+ opacity: 0;
+}
+
+.page_2 .page_txt_box .page_logo.txt_up {
+ animation: txt_up 0.8s 1;
+ animation-fill-mode: forwards;
+}
+
+@keyframes txt_up {
+ 0% {
+  transform: translateY(70px);
+  opacity: 0;
+ }
+
+ 100% {
+  transform: translateY(0);
+  opacity: 1;
+ }
+
+
+}
+
+.page_2 .page_2_txt {
+ padding: 40px 0 60px 0;
+}
+
+.page_2 .page_2_txt p {
+ font-size: 20px;
+ color: #fff;
+ line-height: 25px;
+}
+
+.page_2 .btn_box {
+ justify-content: flex-start;
 }
