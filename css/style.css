@@ -293,30 +293,30 @@ section {
 }
 
 /* Hidden Mega Box Sub Menu Style Code */
-.header .hidden_sub .sub_nav {
+ .hidden_sub .sub_nav {
  width: 1060px;
  margin: auto;
  position: relative;
  top: 105px;
 }
 
-.header .hidden_sub .subnav_box {
+ .hidden_sub .subnav_box {
  position: absolute;
 }
 
-header .hidden_sub .subnav_box ul {
+ .hidden_sub .subnav_box ul {
  display: inline-block;
  vertical-align: text-top;
 }
 
-header .hidden_sub .subnav_box ul .sub_nav_tit {
+ .hidden_sub .subnav_box ul .sub_nav_tit {
  font-weight: bold;
  margin-top: 20px;
  font-size: 14px;
  line-height: 30px;
 }
 
-header .hidden_sub .subnav_box ul a {
+ .hidden_sub .subnav_box ul a {
  color: #000;
  display: block;
  width: 100%;
@@ -326,31 +326,31 @@ header .hidden_sub .subnav_box ul a {
  transition: all 0.4s;
 }
 
-header .hidden_sub .subnav_box ul a:hover {
+ .hidden_sub .subnav_box ul a:hover {
  color: #d72329;
 }
 
-.header .hidden_sub .subnav_box.box_1 {
+ .hidden_sub .subnav_box.box_1 {
  left: 280px;
 }
 
-.header .hidden_sub .subnav_box.box_2 {
+ .hidden_sub .subnav_box.box_2 {
  left: 416px;
 }
 
-.header .hidden_sub .subnav_box.box_3 {
+ .hidden_sub .subnav_box.box_3 {
  left: 529px;
 }
 
-.header .hidden_sub .subnav_box.box_4 {
+ .hidden_sub .subnav_box.box_4 {
  left: 640px;
 }
 
-.header .hidden_sub .subnav_box.box_5 {
+ .hidden_sub .subnav_box.box_5 {
  left: 795px;
 }
 
-.header .hidden_sub .subnav_box.box_6 {
+ .hidden_sub .subnav_box.box_6 {
  left: 940px;
 }
 
